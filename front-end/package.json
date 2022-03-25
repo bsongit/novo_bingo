@@ -4,7 +4,9 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "start": "PORT=81 vite",
+    "go": "pm2 start npm -- start"
   },
   "dependencies": {
     "@emotion/react": "^11.7.1",
