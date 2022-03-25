@@ -1,0 +1,27 @@
+{
+  "name": "portifolio_web",
+  "version": "1.0.0",
+  "description": "A web application and documentation of projects. This Wep App add all features for a portfolio and blog. It's uses Typescript, ReactJs, MongoDB and Nodejs.",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "nodemon ./src/index.js"
+  },
+  "author": "werbeson.contato@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "config": "^3.3.7",
+    "cors": "^2.8.5",
+    "dotenv": "^14.2.0",
+    "express": "^4.17.2",
+    "express-flash": "^0.0.2",
+    "express-session": "^1.17.2",
+    "jest": "^27.4.7",
+    "mongodb": "^4.3.0",
+    "mongoose": "^6.1.7",
+    "nodemon": "^2.0.15",
+    "passport": "^0.5.2",
+    "passport-local": "^1.0.0"
+  }
+}
