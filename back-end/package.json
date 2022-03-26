@@ -1,5 +1,5 @@
 {
-  "name": "portifolio_web",
+  "name": "server-flashday",
   "version": "1.0.0",
   "description": "A web application and documentation of projects. This Wep App add all features for a portfolio and blog. It's uses Typescript, ReactJs, MongoDB and Nodejs.",
   "main": "./src/index.js",
