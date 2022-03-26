@@ -35,7 +35,7 @@
     "serve": "PORT=81 serve -s build",
     "start2": "react-scripts start",
     "build": "react-scripts build",
-    "go": "pm2 start serve -s build -- --port 4400"
+    "go": "pm2 start npm -- start"
   },
   "eslintConfig": {
     "extends": [
