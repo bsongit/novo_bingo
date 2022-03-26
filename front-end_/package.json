@@ -33,9 +33,9 @@
   "scripts": {
     "start": "PORT=3000 react-scripts start",
     "serve": "PORT=81 serve -s build",
-    "start2": "react-scripts start",
+    "start2": "pm2 PORT=3000 react-scripts start",
     "build": "react-scripts build",
-    "go": "pm2 start npm -- start"
+    "go": "pm2 start flashday -- start"
   },
   "eslintConfig": {
     "extends": [
