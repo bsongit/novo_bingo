@@ -31,7 +31,7 @@
     "recharts": "^2.1.8"
   },
   "scripts": {
-    "start": "PORT=81 react-scripts start",
+    "start": "PORT=3000 react-scripts start",
     "serve": "PORT=81 serve -s build",
     "start2": "react-scripts start",
     "build": "react-scripts build",
