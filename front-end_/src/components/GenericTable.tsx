@@ -54,7 +54,7 @@ export default function GenericTable({list,Labels}: Props) {
                 <TableCell
                   key={column.id}
                   align={column.align}
-                  style={{ top: 57, minWidth: column.minWidth }}
+                  style={{ top: 0, minWidth: column.minWidth }}
                 >
                   <b>{column.label}</b>
                 </TableCell>

@@ -20,7 +20,7 @@ import LogoutIcon from '@mui/icons-material/Logout';
 import logo from '../assets/images/logo1.png'
 import { clearSession } from '../utils/SessionHandler';
 
-const drawerWidth: number = 240;
+const drawerWidth: number =  window.screen.width <= 600? 400 : 240;
 
 interface AppBarProps extends MuiAppBarProps {
   open?: boolean;
@@ -60,6 +60,7 @@ const Drawer = styled(MuiDrawer, { shouldForwardProp: (prop) => prop !== 'open' 
       }),
       boxSizing: 'border-box',
       ...(!open && {
+        display: window.screen.width <= 600? 'none' : 'block',
         overflowX: 'hidden',
         transition: theme.transitions.create('width', {
           easing: theme.transitions.easing.sharp,

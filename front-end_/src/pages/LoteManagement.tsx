@@ -139,7 +139,7 @@ function LoteManagement() {
                 label="Data do sorteio"
                 onChange={handlerChangeData}
                 value={form.data}
-                renderInput={(params: JSX.IntrinsicAttributes & TextFieldProps) => <TextField sx={{ backgroundColor: 'white' }} {...params} />}/>
+                renderInput={(params: JSX.IntrinsicAttributes & TextFieldProps) => <TextField sx={{ backgroundColor: 'white', width :'256px' }} {...params} />}/>
             </LocalizationProvider>
             <FormControl sx={{width: '256px' , m: 1}}>
         <InputLabel id="demo-simple-select-label">Quantidade</InputLabel>
@@ -235,7 +235,7 @@ const Button = styled('button', {
   textDecoration: 'none',
   fontWeight: '400',
   '@bp1': {
-    width: '100%',
+    width: '256px',
     marginTop: 12
   },
 

@@ -182,7 +182,7 @@ function UserProfile({_userForm, isMySelf} : Props) {
             {form.perfil == 'VENDEDOR' ?
             <Row css={{marginTop: '12px'}}>
               <MyAutocomplete
-                disabled
+                disabled={getSession().perfil == 'GERENTE'}
                 disablePortal
                 autoComplete={false}
                 selectOnFocus

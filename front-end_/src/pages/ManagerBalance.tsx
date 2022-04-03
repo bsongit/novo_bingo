@@ -93,15 +93,15 @@ function ManagerBalance() {
         <SideBar backgroundColor="white" title="Caixa dos gerentes" secondaryListItems={menuList}>
           <Container>
             <Row>
-              <MyAutocomplete
-                disablePortal
-                selectOnFocus
-                onChange={(event, value) => handlerChangeFilter(event,value)}
-                id="search-gerente"
-                options={parseListToAutoComplete(list)}
-                renderInput={(params) => <TextField {...params} label="Gerentes"/>}
-              />
-                <Button color="success" onClick={createUserMode}>Novo gerente</Button>
+                <MyAutocomplete
+                  disablePortal
+                  selectOnFocus
+                  onChange={(event, value) => handlerChangeFilter(event,value)}
+                  id="search-gerente"
+                  options={parseListToAutoComplete(list)}
+                  renderInput={(params) => <TextField {...params} label="Gerentes"/>}
+                />
+              <Button color="success" onClick={createUserMode}>Novo gerente</Button>
               </Row>
               <GenericTable Labels={tableMBLabel} list={parseListToTable(filteredList)}/>
               </Container>
@@ -157,10 +157,9 @@ const Row = styled('div', {
   flexDirection: 'row',
   justifyContent: 'space-between',
   margging: 0,
-  width: '100%',
   flexWrap: 'wrap',
+  width: '100%',
   '@bp1': {
-    width: '100%',
     flexDirection: 'column',
     justifyContent: 'center',
   },
@@ -188,12 +187,12 @@ const Button = styled('button', {
   backgroundColor: '#228aff',
   color: 'white',
   width: 256,
-  height: '100%',
+  height: 'auto',
   textDecoration: 'none',
   fontWeight: '400',
   '@bp1': {
     width: '100%',
-    marginTop: 12
+    marginTop: 12,
   },
 
   variants: {

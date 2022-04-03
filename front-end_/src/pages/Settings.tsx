@@ -373,7 +373,8 @@ const Button = styled('button', {
   '@bp1': {
     width: '100%',
     marginLeft: '0 !important',
-    marginTop: 12
+    marginTop: 12,
+    height: '4em',
   },
 
   variants: {

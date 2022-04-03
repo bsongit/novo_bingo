@@ -190,7 +190,7 @@ const Button = styled('button', {
   backgroundColor: '#228aff',
   color: 'white',
   width: 256,
-  height: '100%',
+  height: 'auto',
   textDecoration: 'none',
   fontWeight: '400',
   '@bp1': {
